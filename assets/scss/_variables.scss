@@ -1,12 +1,19 @@
+$font-family-sans-serif: "Helvetica Neue",
+Arial,
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
 
+$body-color: #2E384D;
+$blue: #0052CC;
 
-/* $bonta: #ca0550;
+$border-radius: .3125rem;
 
-
-
-$theme-colors: () ;
-$theme-colors: map-merge((
-  "bonta":      $bonta
-), $theme-colors);
- */
-
+$border-radius-sm: .3125rem;
