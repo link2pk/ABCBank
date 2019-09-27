@@ -17,85 +17,48 @@ html {
     font-weight: 500;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    height: calc(100vh - 0px);
-    margin-top: 0px;
-}
-
-.sidebar {
-    bottom: 0px;
-    display: flex;
-    flex-direction: row;
-    left: 0px;
-    position: fixed;
-    top: 0px;
-    z-index: 200;
-    height: 100vh;
-}
-
-.main {
-    margin-left: 63.5px;
-    margin-top: 0px;
-    width: 0px;
-    flex: 1 1 auto;
-    padding-left: 191.5px;
-    transition: padding-left 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
-}
-
-.sidebar-wrap {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    overflow: hidden;
-}
-
-.main-nav {
-    background-color: #091E42;
-    padding: 0;
-    margin: 0;
-    width: 63.5px;
-    -webkit-box-align: center;
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    padding-bottom: calc(20px);
-    padding-top: 24px;
-    width: 64px;
-    height: calc(100vh - 0px);
-    background-color: rgb(7, 71, 166);
-    color: rgb(255, 255, 255);
-    fill: rgb(7, 71, 166);
-    transition: background-color 0.3s cubic-bezier(0.2, 0, 0, 1) 0s, color 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
-}
-
-.sub-nav {
-    width: 240px;
-    transition: width 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
-    height: 100%;
+.my-projects-maximize {
+    font-size: 1.2rem;
+    padding-right: 16px;
     position: relative;
+    top: 1px;
 
+    &::after {
+        content: "";
+        background-color: $body-color;
+        width: 1px;
+        height: 26px;
+        position: absolute;
+        right: 4px;
+    }
 }
 
-.sub-nav-wrap {
-    height: 100%;
-    left: 0px;
-    min-width: 255px;
-    overflow-x: hidden;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    background-color: rgb(244, 245, 247);
-    color: rgb(66, 82, 110);
-    animation-duration: 0.22s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
-    transition-property: boxShadow, transform;
-    transition-duration: 0.22s;
-    transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+
+
+.input-group-text.icon-search,
+.projects-search {
+    border: 2px solid #DFE1E5;
+}
+
+.input-group-text.icon-search {
+    background-color: transparent;
+    color: $primary;
+    border-left: none;
+
+    &.icon {
+        padding-right: 12px;
+    }
+
+    &::before {
+        font-size: 1.1rem;
+    }
+}
+
+.projects-search {
+    border-right: none;
+
+    &.form-control {
+        padding-left: 14px;
+        min-width: 182px;
+    }
 }
