@@ -116,13 +116,106 @@ html {
     width: 40px;
     height: 40px;
 
+
+    h6 {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+    }
 }
 
 .project-name {
     font-size: 0.875rem;
     margin-bottom: .4rem;
+
 }
 
 .project-info {
     font-size: 0.75rem;
+    margin-bottom: 0;
+}
+
+.project-name,
+.project-info {
+    max-width: 10.9rem;
+}
+
+.project-footer {
+    background-color: #fff;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-size: 0.75rem;
+        margin-bottom: 0;
+    }
+
+
+}
+
+.project-nav {
+    display: flex;
+
+    .card-link {
+        position: relative;
+
+
+
+
+    }
+
+
+}
+
+.project-card {
+    &:hover {
+        .before-hover {
+            display: none;
+        }
+
+        .after-hover {
+            display: flex;
+        }
+    }
+}
+
+.after-hover {
+    display: none;
+
+    .card-link {
+        margin-left: 9px;
+        color: $body-color;
+        font-size: 1.5rem;
+        height: 30px;
+
+        &:hover {
+            color: var(--primary);
+        }
+
+    }
+}
+
+.before-hover {
+
+
+    .card-link {
+        margin-left: 0;
+        width: 20px;
+        height: 20px;
+
+        &::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: #E4E8F0;
+            position: absolute;
+            border-radius: 12px;
+            top: 6px;
+            right: 0;
+
+        }
+    }
 }

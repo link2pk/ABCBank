@@ -7222,12 +7222,82 @@ html {
 .media-initial {
   width: 40px;
   height: 40px; }
+  .media-initial h6 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    line-height: 40px; }
 
 .project-name {
   font-size: 0.875rem;
   margin-bottom: .4rem; }
 
 .project-info {
-  font-size: 0.75rem; }
+  font-size: 0.75rem;
+  margin-bottom: 0; }
+
+.project-name,
+.project-info {
+  max-width: 10.9rem; }
+
+.project-footer {
+  background-color: #fff;
+  height: 69px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .project-footer p {
+    font-size: 0.75rem;
+    margin-bottom: 0; }
+
+.project-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .project-nav .card-link {
+    position: relative; }
+
+.project-card:hover .before-hover {
+  display: none; }
+
+.project-card:hover .after-hover {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.after-hover {
+  display: none; }
+  .after-hover .card-link {
+    margin-left: 9px;
+    color: #2E384D;
+    font-size: 1.5rem;
+    height: 30px; }
+    .after-hover .card-link:hover {
+      color: var(--primary); }
+
+.before-hover .card-link {
+  margin-left: 0;
+  width: 20px;
+  height: 20px; }
+  .before-hover .card-link::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #E4E8F0;
+    position: absolute;
+    border-radius: 12px;
+    top: 6px;
+    right: 0; }
 
 /*# sourceMappingURL=app.css.map */
