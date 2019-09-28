@@ -81,6 +81,9 @@
 .icon-search:before {
   content: "\72"; }
 
+.icon-filter:before {
+  content: "\73"; }
+
 :root {
   --blue: #0052CC;
   --indigo: #6610f2;
@@ -7186,5 +7189,45 @@ html {
   .projects-search.form-control {
     padding-left: 14px;
     min-width: 182px; }
+
+.filter {
+  margin-left: 12px;
+  margin-right: 12px; }
+  .filter .icon-filter {
+    background-color: #6F72761F;
+    height: 32px;
+    width: 32px;
+    font-size: 1.2rem; }
+    .filter .icon-filter::before {
+      position: relative;
+      left: -3px; }
+    .filter .icon-filter:hover {
+      background-color: rgba(46, 56, 77, 0.5);
+      color: #fff; }
+
+.dropdown-toggle {
+  padding-right: 34px; }
+  .dropdown-toggle .icon-arrow-down {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1px;
+    right: 8px; }
+  .dropdown-toggle::after {
+    display: none; }
+  .dropdown-toggle.position-relative:hover {
+    cursor: pointer; }
+  .dropdown-toggle.position-relative .icon-arrow-down {
+    top: -6px; }
+
+.media-initial {
+  width: 40px;
+  height: 40px; }
+
+.project-name {
+  font-size: 0.875rem;
+  margin-bottom: .4rem; }
+
+.project-info {
+  font-size: 0.75rem; }
 
 /*# sourceMappingURL=app.css.map */

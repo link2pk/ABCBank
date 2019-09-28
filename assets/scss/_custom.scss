@@ -62,3 +62,67 @@ html {
         min-width: 182px;
     }
 }
+
+.filter {
+    margin-left: 12px;
+    margin-right: 12px;
+
+    .icon-filter {
+        background-color: #6F72761F;
+        height: 32px;
+        width: 32px;
+        font-size: 1.2rem;
+
+
+        &::before {
+            position: relative;
+            left: -3px;
+        }
+
+        &:hover {
+            background-color: rgba($body-color, .5);
+            color: #fff;
+        }
+    }
+}
+
+.dropdown-toggle {
+    padding-right: 34px;
+
+    .icon-arrow-down {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1px;
+        right: 8px;
+
+    }
+
+    &::after {
+        display: none;
+    }
+
+    &.position-relative {
+        &:hover {
+            cursor: pointer;
+        }
+
+        .icon-arrow-down {
+            top: -6px;
+        }
+    }
+}
+
+.media-initial {
+    width: 40px;
+    height: 40px;
+
+}
+
+.project-name {
+    font-size: 0.875rem;
+    margin-bottom: .4rem;
+}
+
+.project-info {
+    font-size: 0.75rem;
+}

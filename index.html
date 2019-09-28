@@ -79,18 +79,16 @@
         </nav>
 
         <main role="main" class="col-md-10 ml-sm-auto col-lg-10 ">
-          <section
-            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          <header
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 "
           >
             <h1 class="h4">
               <span class="icon icon-maximize my-projects-maximize"></span> My
               Projects
             </h1>
             <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="col-auto">
-                <label class="sr-only" for="inlineFormInputGroup"
-                  >Username</label
-                >
+              <div>
+                <label class="sr-only" for="inlineFormInputGroup">Search</label>
                 <div class="input-group input-group-sm mb-2">
                   <input
                     type="text"
@@ -103,10 +101,13 @@
                   </div>
                 </div>
               </div>
+              <div class="filter">
+                <a href="#" class="btn btn-sm   icon icon-filter"></a>
+              </div>
 
-              <div class="dropdown create-project-dropdown">
+              <div class="dropdown ">
                 <button
-                  class="btn btn-sm btn-primary dropdown-toggle font-weight-medium"
+                  class="btn btn-sm btn-primary dropdown-toggle font-weight-medium create-project-dropdown-toggle"
                   type="button"
                   id="dropdownMenuButton"
                   data-toggle="dropdown"
@@ -114,6 +115,7 @@
                   aria-expanded="false"
                 >
                   Create project
+                  <span class="icon icon-arrow-down"></span>
                 </button>
                 <div
                   class="dropdown-menu  dropdown-menu-right"
@@ -123,6 +125,43 @@
                   <a class="dropdown-item" href="#">Another action</a>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
+              </div>
+            </div>
+          </header>
+          <section class="projects">
+            <div class="dropdown ">
+              <a
+                class=" dropdown-toggle position-relative"
+                id="dropdownMenuButton2"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Trending projects
+                <span class="icon icon-arrow-down"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <div class="card" style="width: 17.1rem;">
+              <div class="card-body">
+                <div class="media">
+                  <div
+                    class="mr-3 media-initial rounded"
+                    style="background-color: #0052CC;"
+                  ></div>
+                  <div class="media-body">
+                    <h6 class="mt-0 project-name font-weight-medium">
+                      Projects Name…
+                    </h6>
+                    <p class="project-info">Employee Experience</p>
+                  </div>
+                </div>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
               </div>
             </div>
           </section>
