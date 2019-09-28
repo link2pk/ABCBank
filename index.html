@@ -12,430 +12,425 @@
   </head>
 
   <body>
-    <div class="wrapper">
+    <!--projects-container-->
+    <div class="">
       <aside class="sidebar">
-        <section class="sidebar-wrap">
-          <ul class="main-nav">
+        <section class="main-nav">
+          <ul class="main-nav-ul">
             <li><a href="#" class="icon icon-main-search"> </a></li>
+            <li class="active"><a href="#" class="icon icon-folder"> </a></li>
+            <li><a href="#" class="icon icon-users"> </a></li>
+            <li><a href="#" class="icon icon-comments"> </a></li>
+            <li><a href="#" class="icon icon-directions"> </a></li>
+            <li><a href="#" class="icon icon-extensions"> </a></li>
+            <li><a href="#" class="icon icon-settings"> </a></li>
+          </ul>
+          <ul class="main-nav-ul">
+            <li><a href="#" class="icon icon-notifications"> </a></li>
+            <li><a href="#" class="icon icon-help"> </a></li>
           </ul>
         </section>
-      </aside>
-    </div>
-    <div class="container-fluid h-100 ">
-      <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+
+        <nav class=" sub-nav ">
           <div class="sidebar-sticky">
-            <h6
-              class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
-            >
-              <span>All Survey</span>
-              <a
-                class="d-flex align-items-center text-muted"
-                href="#"
-                aria-label="Add a new report"
-              >
-                <span data-feather="plus-circle"></span>
-              </a>
-            </h6>
+            <header >
+                <a href="#!" >
+                    <img
+                      src="assets/img/abcbank-logo.jpg"
+                      alt="abcbank logo"
+                      width="123"
+                    />
+                  </a>
+                  <h6
+                    class="sidebar-heading d-flex justify-content-between align-items-center   "
+                  >
+                    All Survey
+                  </h6>
+            </header>
+            
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link active" href="#">
-                  <span data-feather="home"></span>
-                  Dashboard <span class="sr-only">(current)</span>
+                  My Project <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  Orders
+                  Archived
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="shopping-cart"></span>
-                  Products
+                  Folder
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span data-feather="users"></span>
-                  Customers
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="bar-chart-2"></span>
-                  Reports
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="layers"></span>
-                  Integrations
+                  Trash
                 </a>
               </li>
             </ul>
           </div>
         </nav>
+      </aside>
 
-        <main role="main" class="col-md-10 ml-sm-auto col-lg-10 ">
-          <header
-            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 "
-          >
-            <h1 class="h4">
-              <span class="icon icon-maximize my-projects-maximize"></span> My
-              Projects
-            </h1>
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div>
-                <label class="sr-only" for="inlineFormInputGroup">Search</label>
-                <div class="input-group input-group-sm mb-2">
-                  <input
-                    type="text"
-                    class="form-control projects-search"
-                    id="inlineFormInputGroup"
-                    placeholder="Search..."
-                  />
-                  <div class="input-group-append">
-                    <div class="input-group-text icon icon-search"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="filter">
-                <a href="#" class="btn btn-sm   icon icon-filter"></a>
-              </div>
-
-              <div class="dropdown ">
-                <button
-                  class="btn btn-sm btn-primary dropdown-toggle font-weight-medium create-project-dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Create project
-                  <span class="icon icon-arrow-down"></span>
-                </button>
-                <div
-                  class="dropdown-menu  dropdown-menu-right"
-                  aria-labelledby="dropdownMenuButton"
-                >
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+      <main role="main" class=" main">
+        <header
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 "
+        >
+          <h1 class="h4">
+            <span class="icon icon-maximize my-projects-maximize"></span> My
+            Projects
+          </h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div>
+              <label class="sr-only" for="inlineFormInputGroup">Search</label>
+              <div class="input-group input-group-sm mb-2">
+                <input
+                  type="text"
+                  class="form-control projects-search"
+                  id="inlineFormInputGroup"
+                  placeholder="Search..."
+                />
+                <div class="input-group-append">
+                  <div class="input-group-text icon icon-search"></div>
                 </div>
               </div>
             </div>
-          </header>
-          <section class="projects">
+            <div class="filter">
+              <a href="#" class="btn btn-sm   icon icon-filter"></a>
+            </div>
+
             <div class="dropdown ">
-              <a
-                class=" dropdown-toggle position-relative"
-                id="dropdownMenuButton2"
+              <button
+                class="btn btn-sm btn-primary dropdown-toggle font-weight-medium create-project-dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Trending projects
+                Create project
                 <span class="icon icon-arrow-down"></span>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+              </button>
+              <div
+                class="dropdown-menu  dropdown-menu-right"
+                aria-labelledby="dropdownMenuButton"
+              >
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </div>
-            <div class="projects-card">
-              <div class="card project-card" style="width: 17.1rem;">
-                <a class="icon icon-options"></a>
-                <div class="card-body blue">
-                  <div class="media">
-                    <div class="mr-3 media-initial rounded">
-                      <h6>P</h6>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-0 project-name text-truncate">
-                        Projects Name…
-                      </h6>
-                      <p class="project-info text-truncate">
-                        Employee Experience
-                      </p>
-                    </div>
+          </div>
+        </header>
+        <section class="projects">
+          <div class="dropdown ">
+            <a
+              class=" dropdown-toggle position-relative"
+              id="dropdownMenuButton2"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Trending projects
+              <span class="icon icon-arrow-down"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div class="projects-card">
+            <div class="card project-card" style="width: 17.1rem;">
+              <a class="icon icon-options"></a>
+              <div class="card-body blue">
+                <div class="media">
+                  <div class="mr-3 media-initial rounded">
+                    <h6>P</h6>
                   </div>
-                </div>
-                <div class="card-footer project-footer">
-                  <p>245 Respones</p>
-                  <div class="project-nav  before-hover ">
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                  </div>
-                  <div class="project-nav  after-hover ">
-                    <a href="#" class="card-link icon icon-assignment"></a>
-                    <a href="#" class="card-link icon icon-share"></a>
-                    <a href="#" class="card-link icon icon-directions"></a>
-                    <a href="#" class="card-link icon icon-assessment"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="card project-card" style="width: 17.1rem;">
-                <a class="icon icon-options"></a>
-                <div class="card-body purple">
-                  <div class="media">
-                    <div class="mr-3 media-initial rounded">
-                      <h6>P</h6>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-0 project-name text-truncate">
-                        Paypal join
-                      </h6>
-                      <p class="project-info text-truncate">
-                        Created on - Jun16,2019
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer project-footer">
-                  <p>245 Respones</p>
-                  <div class="project-nav  before-hover ">
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                  </div>
-                  <div class="project-nav  after-hover ">
-                    <a href="#" class="card-link icon icon-assignment"></a>
-                    <a href="#" class="card-link icon icon-share"></a>
-                    <a href="#" class="card-link icon icon-directions"></a>
-                    <a href="#" class="card-link icon icon-assessment"></a>
+                  <div class="media-body">
+                    <h6 class="mt-0 project-name text-truncate">
+                      Projects Name…
+                    </h6>
+                    <p class="project-info text-truncate">
+                      Employee Experience
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="card project-card" style="width: 17.1rem;">
-                <a class="icon icon-options"></a>
-                <div class="card-body green">
-                  <div class="media">
-                    <div class="mr-3 media-initial rounded">
-                      <h6>P</h6>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-0 project-name text-truncate">
-                        Projects Join
-                      </h6>
-                      <p class="project-info text-truncate">
-                        Project type name
-                      </p>
-                    </div>
-                  </div>
+              <div class="card-footer project-footer">
+                <p>245 Respones</p>
+                <div class="project-nav  before-hover ">
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
                 </div>
-                <div class="card-footer project-footer">
-                  <p>245 Respones</p>
-                  <div class="project-nav  before-hover ">
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                  </div>
-                  <div class="project-nav  after-hover ">
-                    <a href="#" class="card-link icon icon-assignment"></a>
-                    <a href="#" class="card-link icon icon-share"></a>
-                    <a href="#" class="card-link icon icon-directions"></a>
-                    <a href="#" class="card-link icon icon-assessment"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="card project-card" style="width: 17.1rem;">
-                <a class="icon icon-options"></a>
-                <div class="card-body red">
-                  <div class="media">
-                    <div class="mr-3 media-initial rounded">
-                      <h6>P</h6>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-0 project-name text-truncate">
-                        Projects Name
-                      </h6>
-                      <p class="project-info text-truncate">
-                        Project type name
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer project-footer">
-                  <p>245 Respones</p>
-                  <div class="project-nav  before-hover ">
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                  </div>
-                  <div class="project-nav  after-hover ">
-                    <a href="#" class="card-link icon icon-assignment"></a>
-                    <a href="#" class="card-link icon icon-share"></a>
-                    <a href="#" class="card-link icon icon-directions"></a>
-                    <a href="#" class="card-link icon icon-assessment"></a>
-                  </div>
+                <div class="project-nav  after-hover ">
+                  <a href="#" class="card-link icon icon-assignment"></a>
+                  <a href="#" class="card-link icon icon-share"></a>
+                  <a href="#" class="card-link icon icon-directions"></a>
+                  <a href="#" class="card-link icon icon-assessment"></a>
                 </div>
               </div>
             </div>
-          </section>
-          <section class="projects">
-            <div class="dropdown ">
-              <a
-                class=" dropdown-toggle position-relative"
-                id="dropdownMenuButton2"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Recently created project
-                <span class="icon icon-arrow-down"></span>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
-            <div class="projects-card">
-              <div class="card project-card" style="width: 17.1rem;">
-                <a class="icon icon-options"></a>
-                <div class="card-body sky-blue">
-                  <div class="media">
-                    <div class="mr-3 media-initial rounded">
-                      <h6>P</h6>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-0 project-name text-truncate">
-                        Projects Name
-                      </h6>
-                      <p class="project-info text-truncate">
-                        Project type name
-                      </p>
-                    </div>
+            <div class="card project-card" style="width: 17.1rem;">
+              <a class="icon icon-options"></a>
+              <div class="card-body purple">
+                <div class="media">
+                  <div class="mr-3 media-initial rounded">
+                    <h6>P</h6>
                   </div>
-                </div>
-                <div class="card-footer project-footer">
-                  <p>245 Respones</p>
-                  <div class="project-nav  before-hover ">
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                  </div>
-                  <div class="project-nav  after-hover ">
-                    <a href="#" class="card-link icon icon-assignment"></a>
-                    <a href="#" class="card-link icon icon-share"></a>
-                    <a href="#" class="card-link icon icon-directions"></a>
-                    <a href="#" class="card-link icon icon-assessment"></a>
+                  <div class="media-body">
+                    <h6 class="mt-0 project-name text-truncate">
+                      Paypal join
+                    </h6>
+                    <p class="project-info text-truncate">
+                      Created on - Jun16,2019
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="card project-card" style="width: 17.1rem;">
-                <a class="icon icon-options"></a>
-                <div class="card-body orange">
-                  <div class="media">
-                    <div class="mr-3 media-initial rounded">
-                      <h6>P</h6>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-0 project-name text-truncate">
-                        Projects Name
-                      </h6>
-                      <p class="project-info text-truncate">
-                        Project type name
-                      </p>
-                    </div>
-                  </div>
+              <div class="card-footer project-footer">
+                <p>245 Respones</p>
+                <div class="project-nav  before-hover ">
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
                 </div>
-                <div class="card-footer project-footer">
-                  <p>245 Respones</p>
-                  <div class="project-nav  before-hover ">
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                  </div>
-                  <div class="project-nav  after-hover ">
-                    <a href="#" class="card-link icon icon-assignment"></a>
-                    <a href="#" class="card-link icon icon-share"></a>
-                    <a href="#" class="card-link icon icon-directions"></a>
-                    <a href="#" class="card-link icon icon-assessment"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="card project-card" style="width: 17.1rem;">
-                <a class="icon icon-options"></a>
-                <div class="card-body black">
-                  <div class="media">
-                    <div class="mr-3 media-initial rounded">
-                      <h6>P</h6>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-0 project-name text-truncate">
-                        Projects Name
-                      </h6>
-                      <p class="project-info text-truncate">
-                        Created on - Jun16,2019
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer project-footer">
-                  <p>245 Respones</p>
-                  <div class="project-nav  before-hover ">
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                  </div>
-                  <div class="project-nav  after-hover ">
-                    <a href="#" class="card-link icon icon-assignment"></a>
-                    <a href="#" class="card-link icon icon-share"></a>
-                    <a href="#" class="card-link icon icon-directions"></a>
-                    <a href="#" class="card-link icon icon-assessment"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="card project-card" style="width: 17.1rem;">
-                <a class="icon icon-options"></a>
-                <div class="card-body blue">
-                  <div class="media">
-                    <div class="mr-3 media-initial rounded">
-                      <h6>P</h6>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-0 project-name text-truncate">
-                        Projects Name…
-                      </h6>
-                      <p class="project-info text-truncate">
-                        Project type name
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer project-footer">
-                  <p>245 Respones</p>
-                  <div class="project-nav  before-hover ">
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                    <a href="#" class="card-link "></a>
-                  </div>
-                  <div class="project-nav  after-hover ">
-                    <a href="#" class="card-link icon icon-assignment"></a>
-                    <a href="#" class="card-link icon icon-share"></a>
-                    <a href="#" class="card-link icon icon-directions"></a>
-                    <a href="#" class="card-link icon icon-assessment"></a>
-                  </div>
+                <div class="project-nav  after-hover ">
+                  <a href="#" class="card-link icon icon-assignment"></a>
+                  <a href="#" class="card-link icon icon-share"></a>
+                  <a href="#" class="card-link icon icon-directions"></a>
+                  <a href="#" class="card-link icon icon-assessment"></a>
                 </div>
               </div>
             </div>
-          </section>
-        </main>
-      </div>
+            <div class="card project-card" style="width: 17.1rem;">
+              <a class="icon icon-options"></a>
+              <div class="card-body green">
+                <div class="media">
+                  <div class="mr-3 media-initial rounded">
+                    <h6>P</h6>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0 project-name text-truncate">
+                      Projects Join
+                    </h6>
+                    <p class="project-info text-truncate">
+                      Project type name
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer project-footer">
+                <p>245 Respones</p>
+                <div class="project-nav  before-hover ">
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                </div>
+                <div class="project-nav  after-hover ">
+                  <a href="#" class="card-link icon icon-assignment"></a>
+                  <a href="#" class="card-link icon icon-share"></a>
+                  <a href="#" class="card-link icon icon-directions"></a>
+                  <a href="#" class="card-link icon icon-assessment"></a>
+                </div>
+              </div>
+            </div>
+            <div class="card project-card" style="width: 17.1rem;">
+              <a class="icon icon-options"></a>
+              <div class="card-body red">
+                <div class="media">
+                  <div class="mr-3 media-initial rounded">
+                    <h6>P</h6>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0 project-name text-truncate">
+                      Projects Name
+                    </h6>
+                    <p class="project-info text-truncate">
+                      Project type name
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer project-footer">
+                <p>245 Respones</p>
+                <div class="project-nav  before-hover ">
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                </div>
+                <div class="project-nav  after-hover ">
+                  <a href="#" class="card-link icon icon-assignment"></a>
+                  <a href="#" class="card-link icon icon-share"></a>
+                  <a href="#" class="card-link icon icon-directions"></a>
+                  <a href="#" class="card-link icon icon-assessment"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="projects">
+          <div class="dropdown ">
+            <a
+              class=" dropdown-toggle position-relative"
+              id="dropdownMenuButton2"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Recently created project
+              <span class="icon icon-arrow-down"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div class="projects-card">
+            <div class="card project-card" style="width: 17.1rem;">
+              <a class="icon icon-options"></a>
+              <div class="card-body sky-blue">
+                <div class="media">
+                  <div class="mr-3 media-initial rounded">
+                    <h6>P</h6>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0 project-name text-truncate">
+                      Projects Name
+                    </h6>
+                    <p class="project-info text-truncate">
+                      Project type name
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer project-footer">
+                <p>245 Respones</p>
+                <div class="project-nav  before-hover ">
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                </div>
+                <div class="project-nav  after-hover ">
+                  <a href="#" class="card-link icon icon-assignment"></a>
+                  <a href="#" class="card-link icon icon-share"></a>
+                  <a href="#" class="card-link icon icon-directions"></a>
+                  <a href="#" class="card-link icon icon-assessment"></a>
+                </div>
+              </div>
+            </div>
+            <div class="card project-card" style="width: 17.1rem;">
+              <a class="icon icon-options"></a>
+              <div class="card-body orange">
+                <div class="media">
+                  <div class="mr-3 media-initial rounded">
+                    <h6>P</h6>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0 project-name text-truncate">
+                      Projects Name
+                    </h6>
+                    <p class="project-info text-truncate">
+                      Project type name
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer project-footer">
+                <p>245 Respones</p>
+                <div class="project-nav  before-hover ">
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                </div>
+                <div class="project-nav  after-hover ">
+                  <a href="#" class="card-link icon icon-assignment"></a>
+                  <a href="#" class="card-link icon icon-share"></a>
+                  <a href="#" class="card-link icon icon-directions"></a>
+                  <a href="#" class="card-link icon icon-assessment"></a>
+                </div>
+              </div>
+            </div>
+            <div class="card project-card" style="width: 17.1rem;">
+              <a class="icon icon-options"></a>
+              <div class="card-body black">
+                <div class="media">
+                  <div class="mr-3 media-initial rounded">
+                    <h6>P</h6>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0 project-name text-truncate">
+                      Projects Name
+                    </h6>
+                    <p class="project-info text-truncate">
+                      Created on - Jun16,2019
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer project-footer">
+                <p>245 Respones</p>
+                <div class="project-nav  before-hover ">
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                </div>
+                <div class="project-nav  after-hover ">
+                  <a href="#" class="card-link icon icon-assignment"></a>
+                  <a href="#" class="card-link icon icon-share"></a>
+                  <a href="#" class="card-link icon icon-directions"></a>
+                  <a href="#" class="card-link icon icon-assessment"></a>
+                </div>
+              </div>
+            </div>
+            <div class="card project-card" style="width: 17.1rem;">
+              <a class="icon icon-options"></a>
+              <div class="card-body blue">
+                <div class="media">
+                  <div class="mr-3 media-initial rounded">
+                    <h6>P</h6>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0 project-name text-truncate">
+                      Projects Name…
+                    </h6>
+                    <p class="project-info text-truncate">
+                      Project type name
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer project-footer">
+                <p>245 Respones</p>
+                <div class="project-nav  before-hover ">
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                </div>
+                <div class="project-nav  after-hover ">
+                  <a href="#" class="card-link icon icon-assignment"></a>
+                  <a href="#" class="card-link icon icon-share"></a>
+                  <a href="#" class="card-link icon icon-directions"></a>
+                  <a href="#" class="card-link icon icon-assessment"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>

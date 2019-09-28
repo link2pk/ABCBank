@@ -7083,7 +7083,12 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
   /* Height of navbar */
   -webkit-box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
-          box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1); }
+          box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  width: 254px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .sidebar-sticky {
   position: relative;
@@ -7099,8 +7104,9 @@ a.text-dark:hover, a.text-dark:focus {
     position: sticky; } }
 
 .sidebar .nav-link {
-  font-weight: 500;
-  color: #333; }
+  font-size: .875rem;
+  color: #42526E;
+  font-weight: 500; }
 
 .sidebar .nav-link .feather {
   margin-right: 4px;
@@ -7114,8 +7120,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: inherit; }
 
 .sidebar-heading {
-  font-size: .75rem;
-  text-transform: uppercase; }
+  border-bottom: 1px solid #E4E8F0;
+  padding-bottom: 12px;
+  margin-top: 28px;
+  margin-bottom: 0; }
 
 /*
  * Content
@@ -7370,5 +7378,73 @@ html {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin-left: -13px; }
+
+.main-nav {
+  width: 62px;
+  background-color: #091E42;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.main-nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .main-nav-ul li {
+    margin-top: .7rem;
+    margin-bottom: 1.2rem; }
+  .main-nav-ul .icon {
+    color: #fff;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main-nav-ul .icon:hover {
+      text-decoration: none; }
+  .main-nav-ul .active {
+    position: relative; }
+    .main-nav-ul .active .icon {
+      background-color: #fff;
+      color: var(--primary); }
+    .main-nav-ul .active::before {
+      content: "";
+      height: 24px;
+      width: 2px;
+      background-color: #fff;
+      position: absolute;
+      left: -10px;
+      top: 8px; }
+
+.main {
+  padding-left: 254px; }
+
+.sub-nav header {
+  padding: 18px; }
 
 /*# sourceMappingURL=app.css.map */

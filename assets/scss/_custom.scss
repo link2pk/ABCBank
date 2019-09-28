@@ -203,9 +203,11 @@ html {
         top: .35rem;
         font-size: 1.1rem;
         display: none;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
         }
+
         &::before {
             color: rgba($body-color, .54);
         }
@@ -328,4 +330,71 @@ html {
     display: flex;
     flex-wrap: wrap;
     margin-left: -13px;
+}
+
+.main-nav {
+
+    width: 62px;
+    background-color: #091E42;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin-top: .7rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .icon {
+        color: #fff;
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            text-decoration: none;
+
+        }
+    }
+
+    .active {
+        position: relative;
+
+        .icon {
+            background-color: #fff;
+            color: var(--primary);
+        }
+
+        &::before {
+            content: "";
+            height: 24px;
+            width: 2px;
+
+            background-color: #fff;
+            position: absolute;
+            left: -10px;
+            top: 8px;
+        }
+    }
+}
+
+.main {
+    padding-left: 254px;
+}
+
+.sub-nav {
+    header {
+        padding: 18px;
+    }
 }
