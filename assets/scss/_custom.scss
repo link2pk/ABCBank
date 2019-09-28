@@ -86,6 +86,14 @@ html {
     }
 }
 
+.projects {
+    margin-bottom: .5rem;
+
+    .dropdown {
+        margin-bottom: 1rem;
+    }
+}
+
 .dropdown-toggle {
     padding-right: 34px;
 
@@ -171,6 +179,10 @@ html {
 }
 
 .project-card {
+
+    margin-left: 13px;
+    margin-bottom: 13px;
+
     &:hover {
         .before-hover {
             display: none;
@@ -179,13 +191,90 @@ html {
         .after-hover {
             display: flex;
         }
+
+        .icon-options {
+            display: block;
+        }
     }
 
     .icon-options {
         position: absolute;
         right: 1rem;
+        top: .35rem;
         font-size: 1.1rem;
-        color: rgba($body-color, .54);
+        display: none;
+        &:hover{
+            cursor: pointer;
+        }
+        &::before {
+            color: rgba($body-color, .54);
+        }
+    }
+
+    .card-body {
+        border-top-left-radius: $card-border-radius;
+        border-top-right-radius: $card-border-radius;
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+
+    }
+
+    //projects card theme
+
+    .blue {
+        background-color: #DEEBFF;
+
+        .media-initial {
+            background-color: var(--primary);
+        }
+    }
+
+    .purple {
+        background-color: #C0B6F2;
+
+        .media-initial {
+            background-color: #403294;
+        }
+    }
+
+    .green {
+        background-color: #ABF5D1;
+
+        .media-initial {
+            background-color: #006644;
+        }
+    }
+
+    .red {
+        background-color: #FFBDAD;
+
+        .media-initial {
+            background-color: #DE350B;
+        }
+    }
+
+    .sky-blue {
+        background-color: #B3F5FF;
+
+        .media-initial {
+            background-color: #008DA6;
+        }
+    }
+
+    .orange {
+        background-color: #FFF0B3;
+
+        .media-initial {
+            background-color: #FF8B00;
+        }
+    }
+
+    .black {
+        background-color: #DFE1E6;
+
+        .media-initial {
+            background-color: #091E42;
+        }
     }
 }
 
@@ -225,4 +314,18 @@ html {
 
         }
     }
+}
+
+
+.project-footer {
+    border: 2px solid #E4E8F0;
+    border-top: 0;
+    border-bottom-left-radius: $card-border-radius;
+    border-bottom-right-radius: $card-border-radius;
+}
+
+.projects-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -13px;
 }
