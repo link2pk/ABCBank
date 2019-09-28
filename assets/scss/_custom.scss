@@ -180,6 +180,13 @@ html {
             display: flex;
         }
     }
+
+    .icon-options {
+        position: absolute;
+        right: 1rem;
+        font-size: 1.1rem;
+        color: rgba($body-color, .54);
+    }
 }
 
 .after-hover {

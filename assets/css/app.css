@@ -84,6 +84,9 @@
 .icon-filter:before {
   content: "\73"; }
 
+.icon-options:before {
+  content: "\74"; }
+
 :root {
   --blue: #0052CC;
   --indigo: #6610f2;
@@ -7275,6 +7278,12 @@ html {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+
+.project-card .icon-options {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.1rem;
+  color: rgba(46, 56, 77, 0.54); }
 
 .after-hover {
   display: none; }
