@@ -390,11 +390,38 @@ html {
 }
 
 .main {
-    padding-left: 254px;
+    padding: 20px;
+    padding-left: 274px;
+
+    @include media-breakpoint-up(lg) {
+        padding: 24px;
+        padding-left: 278px;
+
+    }
 }
 
 .sub-nav {
     header {
         padding: 18px;
+    }
+
+    .nav {
+        margin-left: 8px;
+    }
+
+    .nav-item {
+        width: 171px;
+    }
+
+    .nav-link {
+        position: relative;
+        padding: 9px 10px 9px 46px;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+        position: absolute;
+        top: .2rem;
+        left: .6rem;
     }
 }

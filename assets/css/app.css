@@ -7105,15 +7105,17 @@ a.text-dark:hover, a.text-dark:focus {
 
 .sidebar .nav-link {
   font-size: .875rem;
-  color: #42526E;
-  font-weight: 500; }
+  color: #42526E; }
 
 .sidebar .nav-link .feather {
   margin-right: 4px;
   color: #727272; }
 
 .sidebar .nav-link.active {
-  color: #007bff; }
+  color: var(--primary);
+  background-color: rgba(111, 114, 118, 0.08);
+  border-radius: 5px;
+  font-weight: 500; }
 
 .sidebar .nav-link:hover .feather,
 .sidebar .nav-link.active .feather {
@@ -7442,9 +7444,30 @@ html {
       top: 8px; }
 
 .main {
-  padding-left: 254px; }
+  padding: 20px;
+  padding-left: 274px; }
+  @media (min-width: 992px) {
+    .main {
+      padding: 24px;
+      padding-left: 278px; } }
 
 .sub-nav header {
   padding: 18px; }
+
+.sub-nav .nav {
+  margin-left: 8px; }
+
+.sub-nav .nav-item {
+  width: 171px; }
+
+.sub-nav .nav-link {
+  position: relative;
+  padding: 9px 10px 9px 46px; }
+
+.sub-nav .icon {
+  font-size: 1.5rem;
+  position: absolute;
+  top: .2rem;
+  left: .6rem; }
 
 /*# sourceMappingURL=app.css.map */
