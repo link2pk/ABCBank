@@ -470,6 +470,8 @@ html {
 
     &::before {
         line-height: 11px;
+        position: relative;
+        left: -1px;
 
         @-moz-document url-prefix() {
             line-height: 10px;
@@ -488,13 +490,13 @@ html {
         color: var(--primary);
         border-color: #DFE1E5;
         font-size: 24px;
-        padding-left: .75rem;
+        padding-left: 0.62rem;
         left: -38px;
 
         &::before {
 
             content: "\6e";
-
+            left: 1px;
 
         }
 
@@ -514,26 +516,27 @@ html {
         border-color: #DFE1E5;
         left: -34px;
 
-        padding-left: 0.75rem;
+        padding-left: 0.62rem;
 
         &::before {
             content: "\6e";
+            left: 1px;
         }
 
-        @include media-breakpoint-up(md) {}
     }
 
     @include media-breakpoint-up(md) {
         .toggle-nav {
             font-size: 14px;
             background-color: var(--primary);
+            border-color: var(--primary);
             color: #fff;
             left: -36px;
             padding-left: 24px;
 
             &::before {
                 content: "\75";
-
+                left: -1px;
             }
         }
     }

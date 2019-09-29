@@ -7565,7 +7565,9 @@ html {
   left: -32px;
   z-index: 900; }
   .toggle-nav::before {
-    line-height: 11px; }
+    line-height: 11px;
+    position: relative;
+    left: -1px; }
 
 @-moz-document url-prefix() {
   .toggle-nav::before {
@@ -7578,10 +7580,11 @@ html {
       color: var(--primary);
       border-color: #DFE1E5;
       font-size: 24px;
-      padding-left: .75rem;
+      padding-left: 0.62rem;
       left: -38px; }
       .toggle-nav::before {
-        content: "\6e"; }
+        content: "\6e";
+        left: 1px; }
       .toggle-nav:hover {
         color: var(--primary); } }
 
@@ -7591,19 +7594,22 @@ html {
   color: var(--primary);
   border-color: #DFE1E5;
   left: -34px;
-  padding-left: 0.75rem; }
+  padding-left: 0.62rem; }
   .toggled .toggle-nav::before {
-    content: "\6e"; }
+    content: "\6e";
+    left: 1px; }
 
 @media (min-width: 768px) {
   .toggled .toggle-nav {
     font-size: 14px;
     background-color: var(--primary);
+    border-color: var(--primary);
     color: #fff;
     left: -36px;
     padding-left: 24px; }
     .toggled .toggle-nav::before {
-      content: "\75"; } }
+      content: "\75";
+      left: -1px; } }
 
 @media screen and (max-width: 452px) {
   .main-header h1 {
