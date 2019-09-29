@@ -7351,6 +7351,7 @@ html {
     position: relative; }
 
 .project-card {
+  width: 17.1rem;
   margin-left: 13px;
   margin-bottom: 13px; }
   .project-card:hover .before-hover {
