@@ -471,6 +471,9 @@ html {
     &::before {
         line-height: 11px;
 
+        @-moz-document url-prefix() {
+            line-height: 10px;
+        }
 
     }
 

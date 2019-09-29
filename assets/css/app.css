@@ -7566,6 +7566,10 @@ html {
   z-index: 900; }
   .toggle-nav::before {
     line-height: 11px; }
+
+@-moz-document url-prefix() {
+  .toggle-nav::before {
+    line-height: 10px; } }
   .toggle-nav:hover {
     color: #fff; }
   @media (min-width: 768px) {
