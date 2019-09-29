@@ -9,6 +9,7 @@ body {
 
 #sidebar-wrapper {
   min-height: 100vh;
+  will-change: margin-left;
   margin-left: -254px;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
@@ -27,7 +28,8 @@ body {
 
 #page-content-wrapper {
   min-width: 100vw;
-  transition: padding-left .25s ease-out;
+  will-change: margin-left;
+  transition: margin-left .25s ease-out;
 }
 
 #wrapper.toggled {
@@ -36,7 +38,7 @@ body {
   }
 
   #page-content-wrapper {
-    padding-left: 274px;
+    margin-left: 254px;
   }
 
 }
@@ -47,9 +49,9 @@ body {
   }
 
   #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
-    padding-left: 278px;
+    min-width: auto;
+
+    margin-left: 254px;
   }
 
   #wrapper.toggled {
@@ -58,7 +60,7 @@ body {
     }
 
     #page-content-wrapper {
-      padding-left: 24px;
+      margin-left: 0;
     }
   }
 }

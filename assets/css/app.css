@@ -7184,6 +7184,7 @@ body {
 
 #sidebar-wrapper {
   min-height: 100vh;
+  will-change: margin-left;
   margin-left: -254px;
   -webkit-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
@@ -7198,27 +7199,27 @@ body {
 
 #page-content-wrapper {
   min-width: 100vw;
-  -webkit-transition: padding-left .25s ease-out;
-  -o-transition: padding-left .25s ease-out;
-  transition: padding-left .25s ease-out; }
+  will-change: margin-left;
+  -webkit-transition: margin-left .25s ease-out;
+  -o-transition: margin-left .25s ease-out;
+  transition: margin-left .25s ease-out; }
 
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0; }
 
 #wrapper.toggled #page-content-wrapper {
-  padding-left: 274px; }
+  margin-left: 254px; }
 
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0; }
   #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
-    padding-left: 278px; }
+    min-width: auto;
+    margin-left: 254px; }
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -254px; }
   #wrapper.toggled #page-content-wrapper {
-    padding-left: 24px; } }
+    margin-left: 0; } }
 
 html {
   scroll-behavior: smooth; }
@@ -7519,6 +7520,9 @@ html {
   padding-right: 20px;
   padding-bottom: 40px;
   padding-left: 20px; }
+  @media (min-width: 768px) {
+    .main {
+      padding-left: 24px; } }
 
 .sub-nav-logo {
   padding: 18px; }
@@ -7547,6 +7551,7 @@ html {
   border-radius: 15px;
   width: 24px;
   height: 24px;
+  padding-left: 24px;
   font-size: 14px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7559,11 +7564,24 @@ html {
   background-color: var(--primary);
   color: #fff;
   position: relative;
-  left: -19px; }
+  left: -32px;
+  z-index: 900; }
   .toggle-nav::before {
     line-height: 11px; }
   .toggle-nav:hover {
     color: #fff; }
+  @media (min-width: 768px) {
+    .toggle-nav {
+      background-color: #fff;
+      color: var(--primary);
+      border-color: #DFE1E5;
+      font-size: 24px;
+      padding-left: .75rem;
+      left: -38px; }
+      .toggle-nav::before {
+        content: "\6e"; }
+      .toggle-nav:hover {
+        color: var(--primary); } }
 
 .toggled .toggle-nav {
   font-size: 24px;
@@ -7571,8 +7589,18 @@ html {
   color: var(--primary);
   border-color: #DFE1E5;
   left: -34px;
-  z-index: 900; }
+  padding-left: 0.75rem; }
   .toggled .toggle-nav::before {
     content: "\6e"; }
+
+@media (min-width: 768px) {
+  .toggled .toggle-nav {
+    font-size: 14px;
+    background-color: var(--primary);
+    color: #fff;
+    left: -36px;
+    padding-left: 24px; }
+    .toggled .toggle-nav::before {
+      content: "\75"; } }
 
 /*# sourceMappingURL=app.css.map */
