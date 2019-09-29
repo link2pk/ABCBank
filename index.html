@@ -13,8 +13,8 @@
 
   <body>
     <!--projects-container-->
-    <div class="">
-      <aside class="sidebar">
+    <div class="" id="wrapper">
+      <aside class="sidebar" id="sidebar-wrapper">
         <section class="main-nav">
           <ul class="main-nav-ul">
             <li><a href="#" class="icon icon-main-search"> </a></li>
@@ -34,60 +34,64 @@
         <nav class=" sub-nav ">
           <div class="sidebar-sticky">
             <div>
-                <header class="sub-nav-logo">
-                    <a href="#!">
-                      <img
-                        src="assets/img/abcbank-logo.jpg"
-                        alt="abcbank logo"
-                        width="123"
-                      />
-                    </a>
-                    <h6
-                      class="sidebar-heading d-flex justify-content-between align-items-center   "
-                    >
-                      All Survey
-                    </h6>
-                  </header>
-      
-                  <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">
-                        <span class="icon icon-folder"></span> My Project
-                        <span class="sr-only">(current)</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">
-                        <span class="icon icon-archived"></span> Archived
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">
-                        <span class="icon icon-folder"></span> Folder
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">
-                        <span class="icon icon-trash"></span> Trash
-                      </a>
-                    </li>
-                  </ul>
-            </div>
-            
-            <footer class="sub-nav-logo">
+              <header class="sub-nav-logo">
                 <a href="#!">
-                    <img
-                      src="assets/img/abcbank-logo.jpg"
-                      alt="abcbank logo"
-                      width="123"
-                    />
+                  <img
+                    src="assets/img/abcbank-logo.jpg"
+                    alt="abcbank logo"
+                    width="123"
+                  />
+                </a>
+                <h6
+                  class="sidebar-heading d-flex justify-content-between align-items-center   "
+                >
+                  All Survey
+                </h6>
+              </header>
+
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <span class="icon icon-folder"></span> My Project
+                    <span class="sr-only">(current)</span>
                   </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="icon icon-archived"></span> Archived
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="icon icon-folder"></span> Folder
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="icon icon-trash"></span> Trash
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <footer class="sub-nav-logo">
+              <a href="#!">
+                <img
+                  src="assets/img/abcbank-logo.jpg"
+                  alt="abcbank logo"
+                  width="123"
+                />
+              </a>
             </footer>
           </div>
         </nav>
       </aside>
 
-      <main role="main" class=" main">
+      <main role="main" class=" main" id="page-content-wrapper">
+        <button
+          class="btn icon icon-menu toggle-nav"
+          id="menu-toggle"
+        ></button>
         <header
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mb-3"
         >
@@ -232,6 +236,39 @@
                   <div class="media-body">
                     <h6 class="mt-0 project-name text-truncate">
                       Projects Join
+                    </h6>
+                    <p class="project-info text-truncate">
+                      Project type name
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer project-footer">
+                <p>245 Respones</p>
+                <div class="project-nav  before-hover ">
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                  <a href="#" class="card-link "></a>
+                </div>
+                <div class="project-nav  after-hover ">
+                  <a href="#" class="card-link icon icon-assignment"></a>
+                  <a href="#" class="card-link icon icon-share"></a>
+                  <a href="#" class="card-link icon icon-directions"></a>
+                  <a href="#" class="card-link icon icon-assessment"></a>
+                </div>
+              </div>
+            </div>
+            <div class="card project-card" style="width: 17.1rem;">
+              <a class="icon icon-options"></a>
+              <div class="card-body red">
+                <div class="media">
+                  <div class="mr-3 media-initial rounded">
+                    <h6>P</h6>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="mt-0 project-name text-truncate">
+                      Projects Name
                     </h6>
                     <p class="project-info text-truncate">
                       Project type name

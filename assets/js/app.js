@@ -1,3 +1,6 @@
 $(function() {
-  //alert($.fn.jquery)
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
 }); //End of document ready

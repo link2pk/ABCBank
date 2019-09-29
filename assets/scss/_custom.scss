@@ -402,13 +402,13 @@ html {
 
 .main {
     background-color: #FAFBFC;
-    padding: 40px 20px 40px 274px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
 
 
-    @include media-breakpoint-up(lg) {
-
-        padding: 40px 20px 40px 278px;
-    }
+    // @include media-breakpoint-up(lg) {}
 }
 
 .sub-nav-logo {
@@ -443,5 +443,43 @@ html {
         position: absolute;
         top: .2rem;
         left: .6rem;
+    }
+}
+
+.toggle-nav {
+    border: 1px solid;
+    border-color: var(--primary);
+    border-radius: 15px;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fff;
+    position: relative;
+    left: -19px;
+
+    &::before {
+        line-height: 11px;
+    }
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.toggled {
+    .toggle-nav {
+        font-size: 24px;
+        background-color: #fff;
+        color: var(--primary);
+        border-color: #DFE1E5;
+        left: -34px;
+        z-index: 900;
+
+        &::before {
+            content: "\6e";
+        }
     }
 }
