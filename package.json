@@ -11,6 +11,7 @@
   "dependencies": {
     "bootstrap": "4.3.1",
     "gulp-autoprefixer": "6.1.0",
+    "gulp-clean-css": "^4.2.0",
     "gulp-update": "0.0.2"
   },
   "devDependencies": {
