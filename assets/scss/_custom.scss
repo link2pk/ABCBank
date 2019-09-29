@@ -411,7 +411,11 @@ html {
     @include media-breakpoint-up(md) {
         padding-left: 24px;
     }
+
 }
+
+
+
 
 .sub-nav-logo {
     padding: 18px;
@@ -529,5 +533,31 @@ html {
 
             }
         }
+    }
+}
+
+
+//responsiveness
+
+@media screen and (max-width: 452px) {
+    .main-header {
+        h1 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-toolbar {
+            justify-content: center;
+        }
+    }
+
+    .projects {
+        .dropdown {
+            text-align: center;
+        }
+    }
+
+    .projects-card {
+        justify-content: center;
     }
 }

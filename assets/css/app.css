@@ -7184,7 +7184,6 @@ body {
 
 #sidebar-wrapper {
   min-height: 100vh;
-  will-change: margin-left;
   margin-left: -254px;
   -webkit-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
@@ -7199,7 +7198,6 @@ body {
 
 #page-content-wrapper {
   min-width: 100vw;
-  will-change: margin-left;
   -webkit-transition: margin-left .25s ease-out;
   -o-transition: margin-left .25s ease-out;
   transition: margin-left .25s ease-out; }
@@ -7602,5 +7600,22 @@ html {
     padding-left: 24px; }
     .toggled .toggle-nav::before {
       content: "\75"; } }
+
+@media screen and (max-width: 452px) {
+  .main-header h1 {
+    margin-left: auto;
+    margin-right: auto; }
+  .main-header .btn-toolbar {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .projects .dropdown {
+    text-align: center; }
+  .projects-card {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 /*# sourceMappingURL=app.css.map */
